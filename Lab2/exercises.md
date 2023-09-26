@@ -6,11 +6,15 @@ Answer and complete the following exercises.
 
 1. How you name functions and member functions matter. Take a look at the [dictionary](https://docs.python.org/3/library/stdtypes.html#typesmapping) 
 and [list](https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range) member functions in the SL. 
+<<<<<<< HEAD
 Do the names of the member functions correlate to what they do? That is, are they good 'verbs' where the name of the function describes the action the code is doing? 
   - A good example would be a function called 'pop' which only removes one element.
   - A bad example would be a function called 'pop' where one element is removed **and** that value is returned. A better name would be 'popAndGet' or 'popAndReturn', which captures the two events happening.
 For the most part, the member functions in dictionary seem to make a lot of sense. One example I found of a bad member function is "Key not in d". This is defined as "equivalent to not key in d," which does not provide a lot of clarity as to what the function actually does.  
 List has much fewer member functions. In the documentation, it appears that sort is the only function that can be used with List. This function is pretty straighforward and acts as described, with the sort function sorting the list in place. 
+=======
+Do the names of the member functions correlate to what they do? That is, are they good 'verbs' where the name of the function describes the action the code is doing? A good example would be a function called 'pop' which only removes one element. A bad example would be a function called 'pop' where one element is removed **and** that value is returned. A better name would be 'popAndGet' or 'popAndReturn', which captures the two events happening.
+>>>>>>> b7ecc82d8ddbc2bc46a781780dc42c03aaf06262
 
 
 2. How does a dictionary differ from a list? (i.e. What is the underlying data structure of each container.)
