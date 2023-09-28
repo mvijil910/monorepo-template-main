@@ -39,8 +39,8 @@ class Image:
 
 
 class Texture:
-    self. 
-    pass
+    def __init__(self, imgObj):
+        self.imgObj = imgObj
 
 
 def main():
@@ -50,11 +50,14 @@ def main():
     image1 = Image(100, 200)
     # Create a second image
     image2 = Image(image1.getWidth(), image1.getHeight())
+    # add texture
+    texture = Texture(image1)
+    texture2 = Texture(image2)
 
-    print(f"image1: {image1.getWidth()}, {image1.getHeight()}")
-    print(f"image1 red color at (0, 0): {image1.getPixelColorR(0, 0)}")
-    print(f"image2: {image2.getWidth()}, {image2.getHeight()}")
-    print(f"image2 red color at (0, 0): {image2.getPixelColorR(0, 0)}")
+    print(f"image1: {texture.imgObj.getWidth}, {image1.getHeight()}")
+    print(f"image1 red color at (0, 0): {texture.imgObj.getPixelColorR(0, 0)}")
+    print(f"image2: {texture2.imgObj.getWidth()}, {texture2.imgObj.getHeight()}")
+    print(f"image2 red color at (0, 0): {texture2.imgObj.getPixelColorR(0, 0)}")
 
 
 if __name__ == "__main__":

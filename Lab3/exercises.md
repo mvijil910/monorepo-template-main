@@ -14,9 +14,9 @@ Update your answers to the following questions, make sure to commit this file an
 1. What methods and attributes does the Texture class inherit from 'Image'? 
 	- Texture inherits getWidth, getHeight, getPixelColor, getPixels, setPixelsToRandomValue, but not the constructor.
 1. Do you think a texture should have a 'has-a' (composition) or 'is-a'(inheritance) relationship with 'Image'? If you think it is a 'has-a' relationship, refactor the code. As long as you defend your decision in the response below it could be either--but defend your position well!
-	- *edit your response*
+	- I felt that it made more sense to say Images have a textur, as opposed to saying, texture is-a Image. From a logical standpoint that made more sense to me, so I refactored the code so that Texture was a composite of Image. 
 1. I did not declare a constructor for Texture. Does Python automatically create constructors for us? 
-	- *edit your response*
+	- Python does not automatically create constructors for the methods. The Texture class worked because it did not have any methods in it. Instead, it simply says to pass which indicates to the program to just kind of skip over it. When I refactored the code, I had to write a constructor using __init__. 
 
 ## Task 2 - Singleton
 
