@@ -6,13 +6,13 @@ Update your answers to the following questions, make sure to commit this file an
 ## Task 1 - oop.py
 
 1. Is MObject an abstract or a concrete class? Explain why:
-	- *edit your response*
+	- MObject is an abstract class because it contains only the __init__ and pass. This class is then implemented by the other classes which inherit from it.
 1. The 'Image' class has commented code for a `__del__` method. What does this commented-out method do?
 	- *edit your response*
 1. What class does Texture inherit from?
-	- *edit your response*
+	- Texture inherits from Image which is passed to it. 
 1. What methods and attributes does the Texture class inherit from 'Image'? 
-	- *edit your response*
+	- Texture inherits getWidth, getHeight, getPixelColor, getPixels, setPixelsToRandomValue, but not the constructor.
 1. Do you think a texture should have a 'has-a' (composition) or 'is-a'(inheritance) relationship with 'Image'? If you think it is a 'has-a' relationship, refactor the code. As long as you defend your decision in the response below it could be either--but defend your position well!
 	- *edit your response*
 1. I did not declare a constructor for Texture. Does Python automatically create constructors for us? 

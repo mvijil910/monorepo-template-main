@@ -38,7 +38,8 @@ class Image:
         self.m_Pixels = [value] * (self.m_width * self.m_height * self.m_colorChannels)
 
 
-class Texture(Image):
+class Texture:
+    self. 
     pass
 
 
