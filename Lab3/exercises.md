@@ -29,6 +29,5 @@ Note: You do not 'have' a constructor, but you construct the object in the *inst
 Hint: Look at Lecture 3 slides for an example of creating a Singleton in Python
 
 1. Are singleton's in Python thread safe? Why or why not?
-
-*edit the code directly*  
+- Because python lacks the concepts of new, private, and protected there are some drawbacks to using a Singleton. However, as the article states, "The one situation that would really demand the pattern would be an existing class that, because of a new requirement, will now operate best as a single instance." My takeaway is that a Singleton is not common practice in Python and therefore not safe for regular use, but can be beneficial in specific instances. The biggest drawbacks to Singletons is the lack of ability to create private objects since Singletons are globally accessible. 
   
