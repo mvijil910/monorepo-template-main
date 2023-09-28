@@ -8,7 +8,7 @@ Update your answers to the following questions, make sure to commit this file an
 1. Is MObject an abstract or a concrete class? Explain why:
 	- MObject is an abstract class because it contains only the __init__ and pass. This class is then implemented by the other classes which inherit from it.
 1. The 'Image' class has commented code for a `__del__` method. What does this commented-out method do?
-	- *edit your response*
+	- '__del__' is a dunder delete method used when all references to the object have been deleted. If this method exists, the derived class must explicitly call this method to ensure a proper deletion. 
 1. What class does Texture inherit from?
 	- Texture inherits from Image which is passed to it. 
 1. What methods and attributes does the Texture class inherit from 'Image'? 
