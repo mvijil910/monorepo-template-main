@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Pixel Change & Drag*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User/UI*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *Allow the user to change the color of a pixel and then drag that color wherever the mouse hovers*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *Program must be open and running, user must select a pixel, feature must be activated*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *(1) Clicking the mouse on a pixel. (2) Pressing and holding left mouse click (3) Dragging the mouse across desired areas on the screen.*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario1**: *User clicks a single pixel to change its color. User presses and holds the left mouse button. User drags mouse across desired ares on the screen to change pixel colors*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *Program becomes unresponsive, user should restart the program through the task manager. Program is unresponsive, color change does not occur, user should trigger the click again.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *Low Priority*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *Third Release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: * The primary actor communicates through I/O devices, specifically, the mouse. The system is responsible for changing pixel colors when the user clicks followed by a left click and hold. The system should respond within 1 second of any mouse click. The user is responsible for all other input*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *NA*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *NA*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *An undo option should be available when users push the button by mistake or change their mind about their design. Future integration with keyboard color change feature would improve this functionality.*
 
 <hr>
 
