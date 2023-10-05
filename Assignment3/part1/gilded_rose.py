@@ -22,17 +22,21 @@ class GildedRose(object):
         
         def update_qual_conjured(qual, sell_in):
             if qual < 50: 
-                if qual > 0: 
-                    if qual > 2: 
-                        qual = qual - 2
-                        if sell_in < 0: 
-                            qual = qual - 4
+                if qual > 0:
+                    if sell_in > 0: 
+                        if qual > 2: 
+                            qual = qual - 2
+                        elif qual == 1: 
+                            qual = qual -1
+                        else: 
+                            qual = 0
+                        return qual
                     else: 
-                        qual = qual -1
-                    return qual
+                        if qual > 4: 
+                            qual = qual - 4
+                        return qual 
                 else: 
-                    return 0
-                
+                    return 0    
             return 50
         
         def update_qual_agedBrie(qual): 
@@ -66,7 +70,7 @@ class GildedRose(object):
             elif item.name == "Sulfuras, Hand of Ragnaros": 
                 item.quality = update_qual_sulfuras(item.quality)
             elif item.name == "Conjured": 
-                item.quality = update_qual_conjured(item.quality, item.quality)
+                item.quality = update_qual_conjured(item.quality, item.sell_in)
             elif item.name == "Backstage passes to a TAFKAL80ETC concert": 
                 item.quality = update_qual_bkstg(item.sell_in, item.quality)
                 if item.quality > 50: 
