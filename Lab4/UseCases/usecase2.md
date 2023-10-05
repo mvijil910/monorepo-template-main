@@ -42,9 +42,9 @@
  
 **Exceptions**: *The program may become potentially unresponsive. In this case, the program can be terminated from the operating system.*
 
-**Priority**: *mid*
+**Priority**: *High*
 
-**When available**: *second release*
+**When available**: *First release*
 
 **Channel to actor**: * The primary actor communicates through I/O devices. This includes the keyboard numbers. The system is responsible for changing the visual color when the user pushes the corresponding number, and should respond within 1 second of any keyboard event. The user is responsible for all other input*
 
