@@ -25,27 +25,34 @@
 8 = Cyan*
   
 **Scenario 1**: *A user pushes a number 1 to change color to Black*
+
 **Scenario 2**: *A user pushes a number 2 to change color to White*
+
 **Scenario 3**: *A user pushes a number 3 to change color to Red*
+
 **Scenario 4**: *A user pushes a number 4 to change color to Green*
+
 **Scenario 5**: *A user pushes a number 5 to change color to Blue*
+
 **Scenario 6**: *A user pushes a number 6 to change color to Yellow*
+
 **Scenario 7**: *A user pushes a number 7 to change color to Magenta*
+
 **Scenario 8**: *A user pushes a number 8 to change color to Cyan*
  
 **Exceptions**: *The program may become potentially unresponsive. In this case, the program can be terminated from the operating system.*
 
-**Priority**: **
+**Priority**: *mid*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *second release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: * The primary actor communicates through I/O devices. This includes the keyboard numbers. The system is responsible for changing the visual color when the user pushes the corresponding number, and should respond within 1 second of any keyboard event. The user is responsible for all other input*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *NA*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *N/A*
 
 <hr>
 
