@@ -52,7 +52,7 @@
 
 **Channels to Secondary Actors**: *N/A*
 
-**Open Issues**: *N/A*
+**Open Issues**: *Users should be able to seamlessly transition to different colors and switch back based on the selected key*
 
 <hr>
 
