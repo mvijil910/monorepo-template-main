@@ -50,7 +50,7 @@ class GildedRoseTest(unittest.TestCase):
         new_sell_in = gr.get_item_sell_in("Sulfuras, Hand of Ragnaros")
         new_quality = gr.get_item_quality("Sulfuras, Hand of Ragnaros")
 
-        assert new_sell_in < original_sell_in
+        assert new_sell_in == original_sell_in
 
         assert new_quality == 80
 

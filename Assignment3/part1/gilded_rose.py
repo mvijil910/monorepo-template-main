@@ -20,11 +20,13 @@ class GildedRose(object):
     
     def update_quality(self):
         
-        def update_qual_conjured(qual):
+        def update_qual_conjured(qual, sell_in):
             if qual < 50: 
                 if qual > 0: 
                     if qual > 2: 
                         qual = qual - 2
+                        if sell_in < 0: 
+                            qual = qual - 4
                     else: 
                         qual = qual -1
                     return qual
@@ -43,12 +45,12 @@ class GildedRose(object):
                 if sellIn < 11:
                     if sellIn < 0: 
                         qual = 0
-                    if sellIn < 6:
+                    elif sellIn < 6:
                         qual += 3
                     else: 
                         qual += 2
                     return qual
-            else: 
+            elif qual == 50: 
                 qual = 50
             return qual 
         
@@ -57,18 +59,23 @@ class GildedRose(object):
             return qual
         
         for item in self.items: 
-            item.sell_in = item.sell_in - 1
+            if item.name != "Sulfuras, Hand of Ragnaros": 
+                item.sell_in = item.sell_in - 1
             if item.name == "Aged Brie": 
                 item.quality = update_qual_agedBrie(item.quality)
-            elif item.name == "Conjured": 
-                item.quality = update_qual_conjured(item.quality)
             elif item.name == "Sulfuras, Hand of Ragnaros": 
-                item.quality = update_qual_sulfuras(item.quality) 
+                item.quality = update_qual_sulfuras(item.quality)
+            elif item.name == "Conjured": 
+                item.quality = update_qual_conjured(item.quality, item.quality)
             elif item.name == "Backstage passes to a TAFKAL80ETC concert": 
-                item.quality = update_qual_bkstg(item.sell_in, item.quality)    
+                item.quality = update_qual_bkstg(item.sell_in, item.quality)
+                if item.quality > 50: 
+                    item.quality = 50    
             else: 
-                if item.quality > 0 and item.quality < 50: 
+                if item.quality > 0 and item.quality <= 50 and item.sell_in > 0: 
                     item.quality = item.quality - 1
+                elif item.sell_in < 0: 
+                    item.quality = item.quality - 2
                 
                               
     
