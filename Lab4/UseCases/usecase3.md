@@ -6,31 +6,31 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Clear Canvas*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *To clear the entire canvas*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *The Program must be running, responsive, and the canvas must not be empty*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *1) pressing the spacebar*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario1**: *A user will press the spacebar to clear the canvas*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *The Program becomes unresponsive and the canvas does not clear. User should terminate the program using task manager.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: *Mid priority*
 
-**When available**: *the targeted release that covers this use case*
+**When available**: *Second Release*
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: *The primary actor communicates through I/O devices, namely the keyboard. The system is responsible for maintaining the visual on the canvas when the user presses the spacebar, and should respond within 1 second of any keyboard event. The user is responsible for all other input.*
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: *NA*
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: *NA*
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: *An undo feature should be available in case the spacebar is pushed by mistake, to restore the users drawing*
 
 <hr>
 
