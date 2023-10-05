@@ -6,21 +6,36 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: *Number to Change Color*
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: *User*
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: *Use keys 1-8 to change draw color*
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: *Program must be running and in responsive state. Draw feature enabled.*
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: *1) user pushes a color 1-8 2) program changes draw color 
+1 = Black
+2 = White
+3 = Red
+4 = Green
+5 = Blue
+6 = Yellow
+7 = Magenta
+8 = Cyan*
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario 1**: *A user pushes a number 1 to change color to Black*
+**Scenario 2**: *A user pushes a number 2 to change color to White*
+**Scenario 3**: *A user pushes a number 3 to change color to Red*
+**Scenario 4**: *A user pushes a number 4 to change color to Green*
+**Scenario 5**: *A user pushes a number 5 to change color to Blue*
+**Scenario 6**: *A user pushes a number 6 to change color to Yellow*
+**Scenario 7**: *A user pushes a number 7 to change color to Magenta*
+**Scenario 8**: *A user pushes a number 8 to change color to Cyan*
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: *The program may become potentially unresponsive. In this case, the program can be terminated from the operating system.*
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: **
 
 **When available**: *the targeted release that covers this use case*
 
