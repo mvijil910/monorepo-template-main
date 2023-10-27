@@ -1,6 +1,9 @@
 .idea*
 .DS_Store
-.venv*
+*.cover
+.coverage   
+.venv
+.env
 .vscode
 __pycache__
 .pytest_cache
