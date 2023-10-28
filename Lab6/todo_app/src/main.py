@@ -28,11 +28,11 @@ def first_apiV5(title: str, book_id: str ):
 
 # Create a PUT ReST API
 @app.put("/books/add_book")
-def first_apiV4(book=Body()): 
+def first_apiV6(book=Body()): 
     return {"msg": book}
 
 
 # Create a DELETE ReST API
 @app.delete("/books/{book_id}")
-def first_apiV5(book_id: str ): 
+def first_apiV7(book_id: str ): 
     return {"msg": "successfully deleted ", "book_id": book_id}
