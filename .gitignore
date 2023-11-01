@@ -3,6 +3,7 @@
 *.cover
 .coverage   
 .venv
+Lab6/todo_app/venv/
 .env
 .vscode
 __pycache__
